@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.9">
+    <root id="1">
+      <ServerVersion>5.0.67</ServerVersion>
+      <DefaultCasing>lower/lower</DefaultCasing>
+    </root>
+    <schema id="2" parent="1" name="farmdog">
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="mydb"/>
+    <schema id="5" parent="1" name="mysql"/>
+    <schema id="6" parent="1" name="test"/>
+    <table id="7" parent="2" name="aviary"/>
+    <table id="8" parent="2" name="dogs"/>
+    <column id="9" parent="7" name="NUM">
+      <Position>1</Position>
+      <DataType>INT(10)|4s</DataType>
+    </column>
+    <column id="10" parent="7" name="CLEEN">
+      <Position>2</Position>
+      <DataType>TINYINT(3)|-6s</DataType>
+    </column>
+    <column id="11" parent="8" name="NAME">
+      <Position>1</Position>
+      <DataType>VARCHAR(30)|12s</DataType>
+    </column>
+    <column id="12" parent="8" name="AGE">
+      <Position>2</Position>
+      <DataType>INT(10)|4s</DataType>
+    </column>
+    <column id="13" parent="8" name="HEALTHY">
+      <Position>3</Position>
+      <DataType>TINYINT(3)|-6s</DataType>
+    </column>
+    <column id="14" parent="8" name="HUNGRY">
+      <Position>4</Position>
+      <DataType>TINYINT(3)|-6s</DataType>
+    </column>
+    <column id="15" parent="8" name="TRAINED">
+      <Position>5</Position>
+      <DataType>TINYINT(3)|-6s</DataType>
+    </column>
+  </database-model>
+</dataSource>
